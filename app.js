@@ -27,5 +27,13 @@ $(function () {
     }
   });
 
+  $("#slideUpButton,#slideDownButton").on("click", () => {
+    if ($("#slideDiv").css("display") === "block") {
+      $("#slideDiv").slideUp();
+    } else {
+      $("#slideDiv").slideDown();
+    }
+  });
+
   // YOUR CODE HERE
 });
