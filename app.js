@@ -11,5 +11,13 @@ $(function () {
     $("#colorDiv").css({ "background-color": "yellow" });
   });
 
+  $("#addClassButton,#removeClassButton").on("click", () => {
+    if ($("#classDiv").hasClass("newClass")) {
+      $("#classDiv").removeClass("newClass");
+    } else {
+      $("#classDiv").addClass("newClass");
+    }
+  });
+  // .newClass
   // YOUR CODE HERE
 });
