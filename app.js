@@ -18,6 +18,14 @@ $(function () {
       $("#classDiv").addClass("newClass");
     }
   });
-  // .newClass
+
+  $("#fadeInButton,#fadeOutButton").on("click", () => {
+    if ($("#fadeDiv").css("display") === "block") {
+      $("#fadeDiv").fadeOut();
+    } else {
+      $("#fadeDiv").fadeIn();
+    }
+  });
+
   // YOUR CODE HERE
 });
