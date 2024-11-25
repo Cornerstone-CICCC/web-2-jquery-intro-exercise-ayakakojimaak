@@ -7,6 +7,9 @@ $(function () {
     }
   });
 
-  $("#toggleButton").on("colorButton", () => {});
+  $("#colorButton").on("click", () => {
+    $("#colorDiv").css({ "background-color": "yellow" });
+  });
+
   // YOUR CODE HERE
 });
